@@ -2,7 +2,8 @@
 import accommodations from '../data/accommodations.json';
 import Card from '../components/Card';
 import Banner from '../components/Banner';
-import bannerImage from '../assets/banner.jpg'; // make sure this image exists
+// import bannerImage from '../assets/banner.jpg'; 
+const bannerImage = "https://via.placeholder.com/1200x300?text=Welcome+to+Kasa";
 import '../styles/Home.scss';
 
 function Home() {

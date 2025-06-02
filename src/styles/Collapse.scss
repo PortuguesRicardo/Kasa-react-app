@@ -3,7 +3,7 @@
   color: white;
   border-radius: 5px;
   margin-bottom: 10px;
-  cursor: pointer;
+//   cursor: pointer;
 
   .collapse-header {
     display: flex;
@@ -15,5 +15,18 @@
     padding: 10px;
     background-color: white;
     color: black;
+  }
+}
+
+.arrow-icon {
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &.open {
+    transform: rotate(180deg);
+  }
+   @media (max-width: 768px) {
+    width: 16px;   // adjusting for mobile
+    height: 16px;
   }
 }

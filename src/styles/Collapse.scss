@@ -1,0 +1,19 @@
+.collapse {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .collapse-content {
+    padding: 10px;
+    background-color: white;
+    color: black;
+  }
+}

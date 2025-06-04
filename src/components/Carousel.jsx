@@ -22,19 +22,23 @@ function Carousel({ images }) {
                 <>
                     <button className="arrow left" onClick={prevSlide}>&#10094;</button>
                     <button className="arrow right" onClick={nextSlide}>&#10095;</button>
-
+                    <div className="counter">
+                        {currentIndex + 1} / {images.length}
+                    </div>
                 </>
             )}
-            <img
-                src={images[currentIndex]}
-                alt={`Property image ${currentIndex + 1}`}
-                className="carousel-image"
 
-            />
-            <>
-                {images.length > 1 &&
-                    <span className="counter">{currentIndex + 1}/{images.length}</span>}
-            </>
+            <div
+                className="carousel-track"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {images.map((src, index) => (
+                    <div className="carousel-slide" key={index}>
+                        <img src={src} alt={`Property image ${index + 1}`} />
+                    </div>
+                ))}
+            </div>
+
         </div>
 
     );

@@ -2,18 +2,31 @@
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  height: 420px;
 
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+   .carousel-slide {
+    min-width: 100%;
+    height: 100%;
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   img.carousel-image {
     width: 100%;
-    height: 415px;
+    
     border-radius: 10px;
     
   }
 
-  .carouse-image{
-    transition: transform 1s ease-in-out;
-  }
+  
   .arrow {
     position: absolute;
     top: 50%;
@@ -43,6 +56,7 @@
     padding: 4px 8px;
     border-radius: 5px;
     font-size: 0.8rem;
+    
   }
 }
 
@@ -56,4 +70,5 @@
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0.2rem 0.6rem;
   border-radius: 1rem;
+  z-index: 2;
 }

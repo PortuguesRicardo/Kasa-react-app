@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import accommodations from '../data/accommodations.json';
+import Carousel from '../components/Carousel';
 
 function Property() {
     const { id } = useParams();
@@ -25,7 +26,8 @@ function Property() {
         <div>
             <h1>{accommodation.title}</h1>
             <p>{accommodation.location}</p>
-            <img src={accommodation.cover} alt={accommodation.title} />
+            <Carousel images={accommodation.pictures} />
+
 
             {/* Tags */}
             <div>
@@ -62,12 +64,7 @@ function Property() {
                 )}
             </div>
 
-            {/* Gallery */}
-            <div>
-                {accommodation.pictures.map((pic, index) => (
-                    <img key={index} src={pic} alt={`${accommodation.title} ${index + 1}`} />
-                ))}
-            </div>
+
         </div>
     );
 }

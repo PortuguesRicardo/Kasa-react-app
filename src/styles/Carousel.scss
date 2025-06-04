@@ -1,0 +1,43 @@
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+
+  img.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &.left {
+      left: 20px;
+    }
+
+    &.right {
+      right: 20px;
+    }
+  }
+
+  .slide-counter {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+}

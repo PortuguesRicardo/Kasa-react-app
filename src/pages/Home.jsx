@@ -2,9 +2,9 @@
 import accommodations from '../data/accommodations.json';
 import Card from '../components/Card';
 import Banner from '../components/Banner';
-// import bannerImage from '../assets/banner.jpg'; 
-const bannerImage = "https://via.placeholder.com/1200x300?text=Welcome+to+Kasa";
+import bannerImage from '../assets/beachCliff.jpg';
 import '../styles/Home.scss';
+
 
 function Home() {
   return (

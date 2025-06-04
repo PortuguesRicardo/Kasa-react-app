@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import accommodations from '../data/accommodations.json';
 import Carousel from '../components/Carousel';
+import Collapse from '../components/Collapse';
+
 
 function Property() {
     const { id } = useParams();
@@ -11,63 +13,54 @@ function Property() {
         return <Navigate to="*" />;
     }
 
-    // return (
-    //     <div>
-    //         <h1>{accommodation.title}</h1>
-    //         <p>Location: {accommodation.location}</p>
-    //         <img src={accommodation.cover} alt={accommodation.title} />
-    //     </div>
-    // );
-
-    const [isDescriptionOpen, setDescriptionOpen] = useState(false);
-    const [isAmenitiesOpen, setAmenitiesOpen] = useState(false);
+    // Star rating rendering 
+    const renderStars = (rating) => {
+        const stars = [];
+        for (let i = 0; i < 5; i++) {
+            stars.push(
+                <span key={i} className={i < rating ? 'star filled' : 'star'}>★</span>
+            );
+        }
+        return stars;
+    };
 
     return (
-        <div>
-            <h1>{accommodation.title}</h1>
-            <p>{accommodation.location}</p>
-            <Carousel images={accommodation.pictures} />
+        <>
 
+            <main className="property">
+                <Carousel images={accommodation.pictures} />
 
-            {/* Tags */}
-            <div>
-                {accommodation.tags.map((tag, index) => (
-                    <span key={index}>{tag}</span>
-                ))}
-            </div>
+                <h1>{accommodation.title}</h1>
+                <p>{accommodation.location}</p>
 
-            {/* Host */}
-            <p>Host: {accommodation.host.name}</p>
+                <div className="tags">
+                    {accommodation.tags.map((tag, index) => (
+                        <span key={index} className="tag">{tag}</span>
+                    ))}
+                </div>
 
-            {/* Rating */}
-            <p>Rating: {accommodation.rating}</p>
+                <div className="host-rating">
+                    <div className="host">{accommodation.host.name}</div>
+                    <div className="rating">{renderStars(accommodation.rating)}</div>
+                </div>
 
-            {/* Description */}
-            <div>
-                <button onClick={() => setDescriptionOpen(!isDescriptionOpen)}>
-                    Description {isDescriptionOpen ? '▲' : '▼'}
-                </button>
-                {isDescriptionOpen && <p>{accommodation.description}</p>}
-            </div>
+                <div className="collapse-sections">
+                    <Collapse title="Description" content={accommodation.description} />
+                    <Collapse
+                        title="Amenities"
+                        content={
+                            <ul>
+                                {accommodation.equipments.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        }
+                    />
+                </div>
+            </main>
 
-            {/* Amenities */}
-            <div>
-                <button onClick={() => setAmenitiesOpen(!isAmenitiesOpen)}>
-                    Amenities {isAmenitiesOpen ? '▲' : '▼'}
-                </button>
-                {isAmenitiesOpen && (
-                    <ul>
-                        {accommodation.equipments.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                )}
-            </div>
-
-
-        </div>
+        </>
     );
 }
 
 export default Property;
-

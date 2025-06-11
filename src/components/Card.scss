@@ -1,3 +1,6 @@
+.cards-container {
+
+  margin-inline: 30px;
 .card {
   display: block;
   border-radius: 10px;
@@ -5,6 +8,7 @@
   text-decoration: none;
   color: inherit;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-inline: 20px;
 
   img {
     width: 100%;
@@ -16,11 +20,12 @@
   h3 {
     padding: 1rem;
     font-size: 1.1rem;
-    background-color: #f7f7f7;
+    
   }
 
   &:hover {
     transform: scale(1.02);
     transition: transform 0.2s ease;
   }
+}
 }

@@ -9,8 +9,19 @@ function Header() {
                 <img src={logo} alt="Kasa Logo" />
             </div>
             <nav>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) => (isActive ? 'active' : '')}
+                    end
+                >
+                    Home
+                </NavLink>
+                <NavLink
+                    to="/about"
+                    className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                    About
+                </NavLink>
             </nav>
         </header>
     );

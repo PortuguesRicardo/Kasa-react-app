@@ -1,8 +1,38 @@
 .header {
-background-color: #f0f0f0;
-  padding: 20px;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 30px;
+    background-color: white;
+    font-family:"Arial", "Monserrat";
+    letter-spacing: 1px;
 }
 
 .logo img {
-  width: 100px; 
+  width: 200px; 
+  
 }
+
+nav {
+        display: flex;
+        gap: 100px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 85%;
+           
+            
+
+            &.active {
+                border-bottom: 1px solid black;
+                font-weight: 500;
+                
+            }
+
+           
+        }
+    }

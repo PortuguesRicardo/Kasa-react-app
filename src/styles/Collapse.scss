@@ -1,19 +1,23 @@
 .collapse {
-  background-color: #ff6060;
-  color: white;
   border-radius: 5px;
-  margin-bottom: 10px;
-//   cursor: pointer;
+  margin-bottom: 30px;
+   background-color: #F6F6F6;
+
 
   .collapse-header {
+    background-color: #ff6060;
+    color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding-inline: 10px;
+    height: 52px;
+    box-sizing: border-box;
+    border-radius: 5px;
+ 
   }
 
   .collapse-content {
-    padding: 10px;
-    background-color: white;
+   
     color: black;
   }
 }
@@ -21,9 +25,11 @@
 .arrow-icon {
   transition: transform 0.3s;
   cursor: pointer;
+padding: 10px 10px;
 
   &.open {
     transform: rotate(180deg);
+    
   }
    @media (max-width: 768px) {
     width: 16px;   // adjusting for mobile

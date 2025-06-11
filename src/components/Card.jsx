@@ -7,6 +7,7 @@ function Card({ id, title, cover }) {
     return (
         <Link to={`/property/${id}`} className="card">
             <img src={cover || fallbackImage} alt={title} />
+            <div className="gradient-overlay"></div>
             <h3>{title}</h3>
         </Link>
     );

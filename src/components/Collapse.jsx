@@ -24,11 +24,10 @@ function Collapse({ title, content }) {
 
 
             </div>
-            {isOpen && (
-                <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
-                    <p>{content}</p>
-                </div>
-            )}
+
+            <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
+                {typeof content === 'string' ? <p>{content}</p> : content}
+            </div>
         </div>
     );
 }

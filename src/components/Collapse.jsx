@@ -25,7 +25,7 @@ function Collapse({ title, content }) {
 
             </div>
             {isOpen && (
-                <div className="collapse-content">
+                <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
                     <p>{content}</p>
                 </div>
             )}

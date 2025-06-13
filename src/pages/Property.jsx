@@ -4,6 +4,7 @@ import accommodations from '../data/accommodations.json';
 import Carousel from '../components/Carousel';
 import Collapse from '../components/Collapse';
 import "../styles/Property.scss";
+import { FaStar } from 'react-icons/fa';
 
 function Property() {
     const { id } = useParams();
@@ -15,13 +16,13 @@ function Property() {
 
     // Star rating rendering 
     const renderStars = (rating) => {
-        const stars = [];
-        for (let i = 0; i < 5; i++) {
-            stars.push(
-                <span key={i} className={i < rating ? 'star filled' : 'star'}>★</span>
-            );
-        }
-        return stars;
+        return [...Array(5)].map((_, index) => (
+            <FaStar className='star'
+                key={index}
+                color={index < rating ? '#FF6060' : '#E3E3E3'}
+
+            />
+        ));
     };
 
     const [firstName, lastName] = accommodation.host.name.split(" ");   // created place firstName and lastName on each line, after them being uploaded through json. 

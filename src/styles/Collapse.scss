@@ -1,7 +1,7 @@
 .collapse {
   border-radius: 5px;
   margin-bottom: 30px;
-   background-color: #F6F6F6;
+  
 
 
   .collapse-header {
@@ -17,10 +17,23 @@
   }
 
   .collapse-content {
-   
+   background-color: #F6F6F6;
+
     color: black;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  p {
+    margin: 0;
+    padding: 20px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 }
+
 
 .arrow-icon {
   transition: transform 0.3s;

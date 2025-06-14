@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <AppRouter />
+        <main className="content">
+          <AppRouter />
+        </main>
       </BrowserRouter>
       <Footer />
     </div>

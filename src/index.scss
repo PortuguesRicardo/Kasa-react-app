@@ -43,71 +43,8 @@ body,
   flex: 1;  //footer to stick to bottom on mobile
 }
 
-.header {
-margin: 0;
-padding-inline: 20px;
-padding-bottom: 0;
 
-  .logo img {
-  width: 140px;
-  
-}
-
-nav {
-  padding-top: 15px;
-  gap: 15px;
-
-  a{
-    
-    font-size: 12px;
-    line-height: 100%;
-  }
-}
-}
-
-.banner{
-  margin: 35px 15px 0px 15px;
-  height: 110px;
-  border-radius: 10px;
-  box-shadow: none;
-  
-  
-.banner-content {
-
-h1 {
-  font-size: 24px;
-  text-align: left;
-  padding-inline: 20px ;
-  
-}
-}
-}
-
-  .cards-container {
-    width: 90%;
-    margin: 0;
-    background-color: #ffffff;
-    padding: 17px;
-    gap: 15px;
-
-    .card {
-      height: 250px;
-    }
-  }
-
-  .footer {
-  height: 200px;
-  padding: 0;
-
-  .footer-logo{
-    margin-top: 60px;
-  }
-  p{
-    font-size: 12px;
-    padding: 10px 130px;
-    margin: 0;
-  }
-}
+ 
 
 }
 

@@ -14,3 +14,21 @@
  fill: white;
 
 }
+
+@media (max-width: 376px) {
+
+  .footer {
+  height: 200px;
+  padding: 0;
+
+
+  .footer-logo{
+    margin-top: 60px;
+  }
+  p{
+    font-size: 12px;
+    padding-inline: 130px;
+    margin: 0;
+  }
+}
+}

@@ -36,7 +36,28 @@ nav {
         }
     }
 
-  
+  @media (max-width: 376px) {
 
-   
+.header {
+margin: 0;
+padding-inline: 20px;
+padding-bottom: 0;
+
+  .logo img {
+  width: 140px;
+  
+}
+
+nav {
+  padding-top: 15px;
+  gap: 15px;
+
+  a{
+    
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+}
+  }
    

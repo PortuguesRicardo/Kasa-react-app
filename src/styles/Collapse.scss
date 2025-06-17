@@ -61,4 +61,15 @@ padding: 10px 10px;
 
 
 }
-
+@media (max-width: 769px){
+.collapse {
+  p {font-size: 14px;}
+  ul {font-size: 14px ;}
+}
+}
+@media (max-width: 376px) {
+.collapse {
+  p {font-size:12px ;}
+  ul {font-size: 12px;}
+}
+}

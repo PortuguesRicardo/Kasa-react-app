@@ -55,6 +55,25 @@ position: absolute;
 }
 }
 
+@media (max-width: 768px){
+.cards-container {
+    width: 95%  !important; 
+    margin: 0;
+    background-color: #ffffff;
+    padding: 17px !important;
+    gap: 15px !important ;
+
+    .card {
+      height: 250px;
+    }
+  }
+}
+  @media (max-width:510px){
+    .cards-container{
+      width: 93% !important;
+    }
+  }
+
 @media (max-width: 376px) { 
   .cards-container {
     width: 90%  !important; 

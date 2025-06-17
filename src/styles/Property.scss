@@ -34,6 +34,9 @@ min-width: 300px;
 
       .tags {
         margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
 
         .tag {
           background: #FF6060;
@@ -121,8 +124,70 @@ min-width: 300px;
 }
 
 
- @media (max-width: 376px) {
+@media (max-width: 768px) {
+.property {
 
+  margin: 30px 20px 0 20px;
+.property-header {
+  .left-info {
+    h1 {
+      font-size: 28px;
+    }
+    .location {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    
+    .tags {
+ .tag {
+font-size: 12px;
+    }
+    }
+   
+  }
+  .right-info {
+.host  {
+  .host-name{
+    font-size: 16px;
+    
+    }
+    .host-picture{
+      width: 48px;
+      height: 48px;
+  }
+}
+.rating {
+.star {
+  font-size: 20px;
+}
+}
+}
+}
+
+.collapse-sections{
+  margin-bottom: 15px;
+.collapse-header{
+  height: 42px;
+}
+  .collapse-header h3{
+
+    font-size: 16px;
+  }
+  .arrow-icon{
+    padding: 5px 0 0 0;
+&.open {
+  position: relative;
+left: 0;
+top: 6px;
+}
+  }
+}
+}
+}
+
+
+
+@media (max-width: 510px){
   .property {
     max-width: 100%;
     
@@ -133,6 +198,7 @@ min-width: 300px;
   .property-header {
     max-width: 100%;
     width: 100%;
+    gap: 5px !important; 
  
     
     margin-top: 10px;
@@ -151,7 +217,7 @@ min-width: 300px;
 
 
       h1 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 500;
         color: #FF6060;
         margin: 0;
@@ -159,7 +225,7 @@ min-width: 300px;
       }
 
       .location {
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 10px;
         margin-bottom: 0;
         font-weight: 500;
@@ -175,7 +241,7 @@ min-width: 300px;
           color: white;
           padding: 4px 20px;
           border-radius: 10px;
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 700;
           margin-right: 10px;
           margin-bottom: 10px;
@@ -204,13 +270,13 @@ min-width: 300px;
         .host-name {
           margin-right: 10px;
           color: #FF6060;
-          font-size: 12px;
+          font-size: 14px;
           font-weight: 500;
         }
 
         .host-picture {
-          width: 32px;
-          height: 32px;
+          width: 38px;
+          height: 38px;
           border-radius: 50%;
           object-fit: cover;
         }
@@ -224,7 +290,7 @@ min-width: 300px;
         gap: 5px;
 
         .star {
-            font-size: 16px;
+            font-size: 18px;
         margin-top: 15px;
     
 
@@ -249,9 +315,132 @@ min-width: 300px;
 
   .arrow-icon {
   
+position: relative;
+padding: 0 !important;
+margin: 0;
+width: 24px;
+
+&.open {
+    transform: rotate(180deg);
+    position: relative;
+    top: 0 !important;
+  }
+
+
+}
+}
+
+.property .collapse-sections{
+
+ 
+     .collapse-header {
+height: 32px;
+
+    h3{
+     padding-block: 5px ;
+font-size: 15px ;
+      
+    }
+    }
+
+.collapse {
+  margin: 0 0 10px 0;
+}
+
+}
+
+ .footer {
+
+  margin-top: 20px ;
+}
+
+}
+
+ @media (max-width: 376px) {
+
+  .property {
+   
+  
+  .property-header {
+    
+ 
+    
+    margin-top: 10px;
+    gap: 15px;
+   
+
+ 
+
+    .left-info {
+     
+
+
+      h1 {
+        font-size: 18px;
+       
+      
+      }
+
+      .location {
+        font-size: 14px;
+      
+      }
+
+      .tags {
+       
+
+        .tag {
+         
+          font-size: 10px;
+          
+        }
+      }
+    }
+
+    .right-info { 
+
+      .host {
+       
+        .host-name {
+        
+          font-size: 12px;
+          
+        }
+
+        .host-picture {
+          width: 32px;
+          height: 32px;
+        
+        }
+      }
+
+      .rating {
+      
+
+        .star {
+            font-size: 16px;
+        margin-top: 15px;
+    
+
+         
+        }
+      }
+    }
+  }
+
+    .collapse-sections {
+
+
+    > div {
+      flex: 1;
+    }
+  }
+
+  .arrow-icon {
+  
 padding-right: 5px;
 position: relative;
-top: -3px;
+top: 0;
 margin: 0;
 width: 22px;
 
@@ -266,27 +455,20 @@ width: 22px;
 
 .property .collapse-sections{
 
-    margin-top : 20px;
-gap: 10px;
+
      .collapse-header {
 
-    border-radius: 5px;
-padding: 0px;
+  
     h3{
+      padding-block: 8px;
 font-size: 13px ;
-        margin:0;
-        padding: 5px 0 5px 5px ;
+       
     }
     }
 
-.collapse {
-  margin: 0 0 10px 0;
-}
+
 
 }
 
- .footer {
 
-  margin-top: 20px ;
-}
  }

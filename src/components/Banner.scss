@@ -49,6 +49,29 @@
 }
 }
 
+@media (max-width: 768px)
+{
+.banner{
+  margin: 35px 15px 0px 15px;
+  height: 110px;
+  border-radius: 10px;
+  box-shadow: none;
+  
+  
+.banner-content {
+
+h1 {
+  font-size: 24px;
+  text-align: left;
+  padding-inline: 20px ;
+  
+}
+}
+}
+
+ }
+
+
  @media (max-width: 376px) {
 .banner{
   margin: 35px 15px 0px 15px;

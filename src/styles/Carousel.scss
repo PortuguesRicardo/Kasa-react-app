@@ -73,6 +73,32 @@
   border-radius: 1rem;
   z-index: 2;
 }
+@media (max-width: 768px){
+.carousel {
+  height: 380px;
+  border-radius: 15px;
+
+  .arrow {
+    font-size: 4rem;
+  }
+}
+
+}
+
+@media (max-width: 510px) {
+
+  .carousel {
+    height: 320px;
+    .arrow {
+      font-size: 2.3rem;
+    }
+    .counter {
+      display: none;
+    }
+  }
+    
+  
+}
 
 @media (max-width: 376px) {
 

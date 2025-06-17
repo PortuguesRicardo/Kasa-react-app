@@ -59,6 +59,50 @@ padding-block: 20px;
   }
 }
 
+@media (max-width:768px) {
+   .about {
+
+    .about-collapses{
+      padding-bottom: 0;
+    }
+    .collapse{
+      margin-bottom: 20px;
+  }
+  
+.collapse-header h3 {
+
+  font-size: 16px;
+ margin: 0;
+ padding: 11px 0 8px 2px;
+}
+ .collapse-content {
+   font-size: 12px;
+
+  
+  }
+  .collapse .collapse-header {
+height: 42px;
+
+  }
+.arrow-icon {
+  
+padding: 0;
+margin: 0;
+width: 24px;
+position: relative;
+left: 2px;
+
+
+
+
+}
+   footer{
+
+    margin-top: 0;
+  }
+}
+}
+
 @media (max-width: 376px) {
 
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Card.scss';
+import '../styles/Card.scss'
 
 function Card({ id, title, cover }) {
     const fallbackImage = "https://via.placeholder.com/400x250?text=No+Image";

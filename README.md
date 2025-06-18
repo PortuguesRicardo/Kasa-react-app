@@ -69,7 +69,8 @@ The app will run at http://localhost:3000
 
    - React Router DOM v6
 
-    - Deployed with Vercel
+ - Deployed with Vercel
+
 
 --- 
 *Let me know if you'd like a downloadable `.md` version, or if you're using GitHub and want help customizing badges, repo links, or screenshots.*

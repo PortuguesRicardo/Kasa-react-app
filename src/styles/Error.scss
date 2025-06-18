@@ -21,7 +21,45 @@
      text-decoration: underline;
   }
 }
+@media (max-width:1024px) {
 
+  .error{
+    h1 {
+      font-size: 10rem ;
+    }
+    p{
+      font-size: 2.1rem;
+    }
+  }
+}
+@media (max-width: 768px){
+.error {
+margin-top: 100px;
+    h1{
+      font-size: 7.5rem;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (max-width:510px){
+
+  .error {
+ margin-inline: 60px;
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      margin-top: 60px;
+      font-size: 1.5rem;
+    }
+    a{
+      font-size: 14px;
+    }
+  }
+}
 @media (max-width: 376px) { 
 
 .error {
